@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh | MSc Cyber Security</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+
+body{
+  background:
+    linear-gradient(rgba(2,6,23,.96),rgba(2,6,23,.96)),
+    repeating-linear-gradient(90deg,rgba(34,211,238,.05) 0 1px,transparent 1px 80px),
+    repeating-linear-gradient(0deg,rgba(34,211,238,.05) 0 1px,transparent 1px 80px);
+  color:#e5e7eb;
+}
+
+/* HEADER */
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(2,6,23,.85);
+  backdrop-filter:blur(8px);
+  padding:16px 50px;
+  display:flex;justify-content:space-between;align-items:center;
+  border-bottom:1px solid #0f172a;
+}
+header h1{color:#22d3ee;font-size:22px}
+nav a{color:#cbd5f5;text-decoration:none;margin-left:24px;font-size:14px}
+nav a:hover{color:#22d3ee}
+
+/* HERO */
+.hero{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:90px 8%;gap:60px;
+}
+.hero h2{font-size:48px}
+.hero h2 span{color:#22d3ee}
+.hero p{margin-top:18px;color:#94a3b8;max-width:520px;line-height:1.6}
+
+.btn{
+  display:inline-block;margin-top:28px;margin-right:15px;
+  padding:14px 28px;border-radius:8px;
+  font-size:14px;text-decoration:none;
+}
+.primary{background:#22d3ee;color:#020617}
+.secondary{border:1px solid #334155;color:#e5e7eb}
+
+/* PROFILE */
+.profile{
+  background:rgba(15,23,42,.85);
+  padding:22px;border-radius:18px;
+  box-shadow:0 0 35px rgba(34,211,238,.35)
+}
+.profile img{width:260px;border-radius:14px}
+
+/* SECTIONS */
+section{padding:80px 8%}
+section h3{font-size:32px;margin-bottom:30px}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+.card{
+  background:rgba(15,23,42,.9);
+  border:1px solid #1e293b;
+  padding:24px;border-radius:16px;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#22d3ee;
+  box-shadow:0 0 20px rgba(34,211,238,.25);
+}
+.card a{color:#e5e7eb;text-decoration:none}
+
+/* FOOTER */
+footer{
+  text-align:center;padding:25px;
+  background:#020617;color:#64748b;
+  border-top:1px solid #0f172a;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Harsh</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#certs">Certifications</a>
+    <a href="Harsh_Resume.pdf" target="_blank">Resume</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>MSc <span>Cyber Security</span></h2>
+    <p>
+      MSc Cyber Security student with hands-on exposure to SOC monitoring,
+      incident response, malware analysis, and GRC frameworks.
+      Actively seeking internships and fresher roles.
+    </p>
+
+    <a href="Harsh_Resume.pdf" target="_blank" class="btn primary">View Resume</a>
+    <a href="#certs" class="btn secondary">View Certifications</a>
+  </div>
+
+  <div class="profile">
+    <img src="profile.jpg" alt="Profile Photo">
+  </div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section id="education">
+  <h3>Education</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Bachelor of Computer Applications (BCA)</h4>
+      <p>C U Shah Institute of Computer Application</p>
+      <p>March 2022 – April 2024</p>
+    </div>
+    <div class="card">
+      <h4>MSc Cyber Security (Pursuing)</h4>
+      <p>Lok Jagurti Kendra University, Ahmedabad</p>
+      <p>2024 – Present</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h3>Core Skills</h3>
+  <div class="grid">
+    <div class="card">SOC Monitoring & Incident Response</div>
+    <div class="card">Governance, Risk & Compliance (GRC)</div>
+    <div class="card">Malware Analysis & DFIR</div>
+    <div class="card">Vulnerability Assessment</div>
+  </div>
+</section>
+
+<section id="certs">
+  <h3>Certifications (PDF)</h3>
+  <div class="grid">
+    <div class="card"><a href="certs/foundations-cybersecurity.pdf" target="_blank">Foundations of Cybersecurity</a></div>
+    <div class="card"><a href="certs/assets-threats-vulnerabilities.pdf" target="_blank">Assets, Threats & Vulnerabilities</a></div>
+    <div class="card"><a href="certs/cybersecurity-tools-attacks.pdf" target="_blank">Cybersecurity Tools & Attacks</a></div>
+    <div class="card"><a href="certs/grc.pdf" target="_blank">Governance, Risk & Compliance</a></div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Harsh | MSc Cyber Security
+</footer>
+
+</body>
+</html>
